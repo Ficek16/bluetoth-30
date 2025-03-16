@@ -11,6 +11,9 @@ bluetooth.onBluetoothDisconnected(function () {
     basic.pause(1000)
     basic.clearScreen()
 })
+input.onButtonPressed(Button.AB, function () {
+    control.reset()
+})
 bluetooth.onUartDataReceived(serial.delimiters(Delimiters.NewLine), function () {
     data = bluetooth.uartReadUntil(serial.delimiters(Delimiters.NewLine))
     led.unplot(x, y)
