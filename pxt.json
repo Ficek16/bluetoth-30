@@ -1,5 +1,6 @@
 {
     "name": "Bluetoth 3.0 - Kopie",
+    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "core": "*",
